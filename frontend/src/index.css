@@ -9,11 +9,26 @@ body {
   background-position: center;
 }
 
+@keyframes pulse {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .sandesh-text {
-  background: #FF8B44;
-background: linear-gradient(to right, #FF8B44 0%, #CDD3FF 50%, #24CF2C 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+  background: #FF9933;
+  background: linear-gradient(to right, #FF9933 0%, #FFFFFF 50%, #138808 100%);
+  background-size: 200% 200%;
+  color: #000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: pulse 5s ease-in-out infinite;
 }
 
 ::-webkit-scrollbar {
